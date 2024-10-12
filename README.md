@@ -1,8 +1,7 @@
-# Inteligencia-Artificial
 
 # Algoritmo de Búsqueda de Rutas
 
-Este proyecto contiene un algoritmo en Python que busca las rutas de menor y mayor costo en una matriz, representando un gráfico de costos.
+Este proyecto contiene un algoritmo en Python que busca las rutas de menor y mayor costo en una matriz, representando un gráfico de costos. 
 
 ## Descripción del Algoritmo
 
@@ -33,4 +32,41 @@ matriz = [
 # Definir el punto de inicio y el punto final
 inicio = (1, 2)  # C2
 final = (11, 7)  # H12
+```
+
+Ejecuta el algoritmo:
+
+```python
+ruta_minima, costo_minimo = encontrar_ruta(matriz, inicio, final)
+ruta_maxima, costo_maximo = encontrar_ruta(matriz_invertida, inicio, final)
+```
+
+## Resultados
+
+El programa imprimirá la ruta y el costo correspondiente para las rutas mínima y máxima encontradas:
+
+```
+Ruta mínima encontrada: ...
+Costo mínimo total: ...
+Ruta máxima encontrada: ...
+Costo máximo total: ...
+```
+
+## Requisitos
+
+- Python 3.x
+- Sin dependencias externas
+
+## Instrucciones de Instalación
+
+1. Clona este repositorio.
+2. Asegúrate de tener Python 3.x instalado.
+3. Ejecuta el script:
+
+```bash
+python algoritmo-ruta.py
+```
+
+## Licencia
+
 
