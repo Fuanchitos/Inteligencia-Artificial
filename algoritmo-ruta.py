@@ -1,4 +1,4 @@
-def encontrar_ruta(matriz, inicio, final):
+def encontrar_ruta(matriz, inicio, final, buscar_mayor=False):
     filas = len(matriz)
     columnas = len(matriz[0])
     
@@ -52,9 +52,16 @@ matriz = [
 inicio = (1, 2)  # C2
 final = (11, 7)  # H12
 
-# Encontrar la ruta
-ruta, costo = encontrar_ruta(matriz, inicio, final)
+# Encontrar la ruta mínima
+ruta_minima, costo_minimo = encontrar_ruta(matriz, inicio, final)
 
-# Mostrar el resultado
-print("Ruta encontrada:", ruta)
-print("Costo total:", costo)
+# Ahora, para la ruta de mayor costo, invertir los valores de la matriz
+matriz_invertida = [[-valor for valor in fila] for fila in matriz]
+ruta_maxima, costo_maximo = encontrar_ruta(matriz_invertida, inicio, final)
+costo_maximo = -costo_maximo  # Revertir el costo para mostrar el original
+
+# Mostrar resultados
+print("Ruta mínima encontrada:", ruta_minima)
+print("Costo mínimo total:", costo_minimo)
+print("Ruta máxima encontrada:", ruta_maxima)
+print("Costo máximo total:", costo_maximo)
