@@ -15,19 +15,15 @@ Esta práctica consiste en crear una función que dibuje una línea en una venta
 Para ejecutar este proyecto, asegúrate de tener Python instalado en tu sistema. También es necesario que Tkinter esté disponible. Para instalar Tkinter en Ubuntu, sigue las instrucciones a continuación:
 
 ### Ubuntu
-
-```bash
 sudo apt-get install python3-tk
 
-## Uso
+### Uso
 
 1. Clona este repositorio en tu máquina local:
+    git clone https://github.com/tu_usuario/nombre_del_repositorio.git
 
-   ```bash
-   git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+2. Navega al directorio del repositorio:
+    cd nombre_del_repositorio
 
-Navega al directorio del repositorio:
-
-bash
-Copiar código
-cd nombre_del_repositorio
+3. Ejecuta el script de Python:
+    python linea.py
